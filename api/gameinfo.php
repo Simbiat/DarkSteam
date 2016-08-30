@@ -4,7 +4,7 @@ require_once('./commonfunc.php');
 
 
 // ######################### REQUIRE BACK-END ############################
-require_once "../../genfunc/sconfig.php";
+require_once "../config.php";
 
 // #######################################################################
 // ######################## START MAIN SCRIPT ############################

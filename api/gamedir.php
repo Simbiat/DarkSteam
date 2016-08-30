@@ -5,7 +5,7 @@ require_once('./commonfunc.php');
 ini_set( "display_errors", 0);
 
 // ######################### REQUIRE BACK-END ############################
-require_once "../../genfunc/config.php";
+require_once "../config.php";
 
 // #######################################################################
 // ######################## START MAIN SCRIPT ############################

@@ -1,7 +1,7 @@
 <?php
 require_once('./commonfunc.php');
 
-require_once "../../genfunc/config.php";
+require_once "../config.php";
 
 
 // #######################################################################

@@ -7,7 +7,7 @@ if($_GET['dir']) {
 if ($dirlistecho = capcu_fetch($dirlistcachename)) {
 	echo $dirlistecho;
 } else {
-require_once "../../genfunc/config.php";
+require_once "../config.php";
 $dirlistecho="";
 /*
 Directory Listing Script - Version 3

@@ -1,7 +1,7 @@
 <?php
 ini_set( "display_errors", 0);
 $curdir = getcwd ();
-require_once "../../genfunc/config.php";
+require_once "../config.php";
 chdir ($curdir);
 
 	$forumpath = "http://a12.net.ru/";

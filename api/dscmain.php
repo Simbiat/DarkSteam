@@ -66,7 +66,7 @@ if (empty($_GET['appid'])) {
 
 
 // ######################### REQUIRE BACK-END ############################
-require_once "../../genfunc/config.php";
+require_once "../config.php";
 
 
 // ######################## OUTPUT PAGE ############################
