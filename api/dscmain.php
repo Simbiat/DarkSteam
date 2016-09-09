@@ -148,7 +148,7 @@ if ($showheader == 0 and $showgamelist == 0 and $shownews == 0 and $showgameinfo
 	$HTML=$HTML. "<a class=\"intlink\" title=\"Patch notes\" href=\"./patchnotes.php\"><img height=\"20px\" width=\"20px\" src=\"img/Git-Icon-White.png\"></a>&nbsp;";
 	$HTML=$HTML. "<a target=\"_blank\" title=\"Lucky Draw\" href=\"./luckydraw.php\"><img height=\"20px\" width=\"20px\" src=\"img/clover-512.png\"></a>&nbsp;";
 	$HTML=$HTML. "<a target=\"_blank\" title=\"Download client (.exe)\" href=\"./dsc.exe\"><img height=\"20px\" width=\"20px\" src=\"img/arrow-211-512.png\"></a>";
-	$HTML=$HTML. "<a target=\"_blank\" title=\"Download client source code for Visual Studio 2013 (.zip)\" href=\"https://github.com/Simbiat/DarkSteam"><img height=\"20px\" width=\"20px\" src=\"img/visualstudio-2048.png\"></a>";
+	$HTML=$HTML. "<a target=\"_blank\" title=\"Download client source code for Visual Studio 2013 (.zip)\" href=\"https://github.com/Simbiat/DarkSteam\"><img height=\"20px\" width=\"20px\" src=\"img/visualstudio-2048.png\"></a>";
 	$HTML=$HTML. "</div><div style=\"height:720px; overflow-x:hidden; overflow-y:auto;\" id=\"dscnews\" name=\"dscnews\">news</div></td></tr>";
 	$HTML=$HTML . "</table>
 		<script>
