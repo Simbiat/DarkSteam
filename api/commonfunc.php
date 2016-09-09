@@ -129,8 +129,8 @@ function capcu_delete($filename) {
 	if (extension_loaded('apcu') === true) {
 		apcu_delete("ss_gameinfo".$appid);
 	} else {
-		if (file_exists("../../cache/".$filename.".txt")) {
-			@unlink("../../cache/".$filename.".txt");
+		if (file_exists("./cache/".$filename.".txt")) {
+			@unlink("./cache/".$filename.".txt");
 		}
 	}
 }
@@ -138,7 +138,10 @@ function capcu_store($varname, $vardata, $timestore) {
 	if (extension_loaded('apcu') === true) {
 		apcu_store($varname, $vardata, $timestore);
 	} else {
-		@file_put_contents("../../cache/".$varname.".txt", $vardata);
+		if (!is_dir("./cache")) {
+			mkdir("./cache");
+		}
+		@file_put_contents("./cache/".$varname.".txt", $vardata);
 	}
 }
 function capcu_fetch($varname) {
@@ -148,7 +151,7 @@ function capcu_fetch($varname) {
 		if (time()-filemtime($filename) > 86400) {
 			return false;
 		} else {
-			return file_get_contents("../../cache/".$varname.".txt");
+			return file_get_contents("./cache/".$varname.".txt");
 		}
 	}
 }
